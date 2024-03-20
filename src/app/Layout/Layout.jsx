@@ -7,11 +7,11 @@ export default function Layout() {
 
   return (
     <>
-      {location.pathname != "/crypto-slaves" && <Header />}
+      {location.pathname != "/crypto-slaves/" && <Header />}
       <main>
         <Outlet />
       </main>
-      {location.pathname != "/crypto-slaves" && <Footer />}
+      {location.pathname != "/crypto-slaves/" && <Footer />}
     </>
   );
 }
