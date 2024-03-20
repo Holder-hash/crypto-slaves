@@ -8,8 +8,8 @@ function App() {
   return (
     <Routes>
       <Route path={"/crypto-slaves"} element={<Layout />}>
-        <Route path="main" element={<MainPage />} />
         <Route index element={<LoginPage />} />
+        <Route path="main" element={<MainPage />} />
         <Route path="*" element={<LoginPage />} />
       </Route>
     </Routes>
