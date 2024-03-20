@@ -9,7 +9,7 @@ function App() {
     <Routes>
       <Route path={"/crypto-slaves"} element={<Layout />}>
         <Route path="main" element={<MainPage />} />
-        <Route path="login" element={<LoginPage />} />
+        <Route index element={<LoginPage />} />
         <Route path="*" element={<LoginPage />} />
       </Route>
     </Routes>
