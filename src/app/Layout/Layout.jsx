@@ -1,10 +1,12 @@
-import Header from "../../shared/Header/Header";
-import { Outlet } from "react-router-dom";
+import Header from "../../widgets/Header/Header";
+import { Outlet, useLocation } from "react-router-dom";
 
 export default function Layout() {
+  const location = useLocation();
+
   return (
     <>
-      <Header />
+      {location.pathname != "/crypto-slaves/login" && <Header />}
       <main>
         <Outlet />
       </main>

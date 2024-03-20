@@ -10,3 +10,17 @@ body {
   background-color: black;
   color: white;
 }
+
+@font-face {
+  font-family: 'Aladin', sans-serif;
+  src: url('./assets/fonts/Aladin-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JockeyOne', sans-serif;
+  src: url('./assets/fonts/JockeyOne-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
