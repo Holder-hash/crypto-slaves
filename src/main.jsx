@@ -7,7 +7,7 @@ import "./index.css";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/crypto-slaves",
     element: <App />,
   },
 ]);
