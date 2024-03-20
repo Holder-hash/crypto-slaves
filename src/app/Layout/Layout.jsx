@@ -1,4 +1,5 @@
 import Header from "../../widgets/Header/Header";
+import Footer from "../../widgets/Footer/Footer";
 import { Outlet, useLocation } from "react-router-dom";
 
 export default function Layout() {
@@ -10,6 +11,7 @@ export default function Layout() {
       <main>
         <Outlet />
       </main>
+      {location.pathname != "/crypto-slaves/login" && <Footer />}
     </>
   );
 }
