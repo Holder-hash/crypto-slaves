@@ -10,6 +10,7 @@
 }
 
 .navBtn {
+  z-index: 2;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -26,7 +27,37 @@
   padding: 2px;
 
   span {
+    transition: 0.3s;
     width: 100%;
     border: 1px solid white;
+  }
+}
+
+.nav {
+  position: fixed;
+  width: 70%;
+  height: 100vh;
+  background: #202020;
+  transform: translateX(-100%);
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.navActive {
+  transform: translateX(0);
+}
+
+.navBtnActive {
+  span:nth-child(1) {
+    position: absolute;
+    transform: rotate(135deg);
+  }
+  span:nth-child(2) {
+    opacity: 0;
+  }
+  span:nth-child(3) {
+    position: absolute;
+
+    transform: rotate(-135deg);
   }
 }
