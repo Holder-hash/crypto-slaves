@@ -1,8 +1,10 @@
+import { Routes, Route } from "react-router-dom";
+
 function App() {
   return (
-    <>
-      <div></div>
-    </>
+    <Routes>
+      <Route index={"/"}></Route>
+    </Routes>
   );
 }
 
