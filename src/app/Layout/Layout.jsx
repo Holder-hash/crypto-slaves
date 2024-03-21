@@ -8,7 +8,7 @@ export default function Layout() {
   return (
     <>
       {location.pathname != "/crypto-slaves/" && <Header />}
-      <main>
+      <main style={{ marginBottom: "2rem" }}>
         <Outlet />
       </main>
       {location.pathname != "/crypto-slaves/" && <Footer />}
