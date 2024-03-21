@@ -99,14 +99,6 @@ const TopPlayersTable = () => {
           </tr>
         ))}
       </tbody>
-      <tfoot>
-        <tr>
-          <td
-            colSpan="2"
-            style={{ borderTop: "2px solid white", padding: "10px 0" }}
-          ></td>
-        </tr>
-      </tfoot>
     </table>
   );
 };
