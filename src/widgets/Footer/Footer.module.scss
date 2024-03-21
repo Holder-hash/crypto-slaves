@@ -1,5 +1,5 @@
 .copy {
-  margin: 40px auto 15px;
+  padding-bottom: 1rem;
   font-family: Alatsi;
   font-size: 24px;
   font-weight: 400;
@@ -8,7 +8,6 @@
   text-align: center;
   text-wrap: nowrap;
   position: absolute;
-  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
