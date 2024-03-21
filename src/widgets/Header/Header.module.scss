@@ -33,20 +33,6 @@
   }
 }
 
-.nav {
-  position: fixed;
-  width: 70%;
-  height: 100vh;
-  background: #202020;
-  transform: translateX(-100%);
-  transition: 0.3s;
-  z-index: 2;
-}
-
-.navActive {
-  transform: translateX(0);
-}
-
 .navBtnActive {
   span:nth-child(1) {
     position: absolute;
