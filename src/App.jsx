@@ -5,6 +5,7 @@ import PrivateRoute from "./app/routes/PrivateRoute";
 import LoginPage from "./pages/LoginPage/MainPage/LoginPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import RobotsPage from "./pages/RobotsPage/RobotsPage";
+import SlavesPage from "./pages/SlavesPage/SlavesPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route index element={<LoginPage />} />
         <Route path="main" element={<MainPage />} />
         <Route path="robots" element={<RobotsPage />} />
+        <Route path="slaves" element={<SlavesPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
     </Routes>
