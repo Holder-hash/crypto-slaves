@@ -58,10 +58,9 @@ const TopPlayersTable = () => {
           <tr key={index}>
             <td
               style={{
-                borderBottom: "1px solid white",
+                borderRight: "1px solid white",
                 padding: "10px 0 10px 10px",
                 width: "50%",
-                border: "1px solid white",
               }}
             >
               {index < 3 ? (
@@ -88,7 +87,7 @@ const TopPlayersTable = () => {
             </td>
             <td
               style={{
-                borderBottom: "1px solid white",
+                borderRight: "1px solid white",
                 padding: "10px 0",
                 fontSize: `${index < 3 ? 25 - index * 3 : 15}px`,
                 width: "50%",
