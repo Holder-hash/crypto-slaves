@@ -46,6 +46,7 @@ const TopPlayersTable = () => {
               borderBottom: "2px solid white",
               padding: "10px 0",
               width: "50%",
+              border: "1px solid white",
             }}
           >
             Рабы
@@ -58,8 +59,9 @@ const TopPlayersTable = () => {
             <td
               style={{
                 borderBottom: "1px solid white",
-                padding: "10px 0",
+                padding: "10px 0 10px 10px",
                 width: "50%",
+                border: "1px solid white",
               }}
             >
               {index < 3 ? (
