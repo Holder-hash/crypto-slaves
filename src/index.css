@@ -11,6 +11,12 @@ body {
   color: white;
 }
 
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 @font-face {
   font-family: 'Aladin', sans-serif;
   src: url('./assets/fonts/Aladin-Regular.ttf') format('ttf');
