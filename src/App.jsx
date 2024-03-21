@@ -4,6 +4,7 @@ import MainPage from "./pages/MainPage/MainPage";
 import PrivateRoute from "./app/routes/PrivateRoute";
 import LoginPage from "./pages/LoginPage/MainPage/LoginPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import RobotsPage from "./pages/RobotsPage/RobotsPage";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path={"/crypto-slaves"} element={<Layout />}>
         <Route index element={<LoginPage />} />
         <Route path="main" element={<MainPage />} />
+        <Route path="robots" element={<RobotsPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
     </Routes>
