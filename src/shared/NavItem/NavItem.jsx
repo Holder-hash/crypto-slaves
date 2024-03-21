@@ -1,9 +1,12 @@
 import styles from "./NavItem.module.scss";
+import { Link } from "react-router-dom";
 
-export default function NavItem({ children }) {
+export default function NavItem({ to, children }) {
   return (
     <button className={styles.button}>
-      <p className={styles.text}>{children}</p>
+      <Link to={to} className={styles.text}>
+        {children}
+      </Link>
     </button>
   );
 }

@@ -13,12 +13,12 @@ export default function Nav({ navActive }) {
           </div>
         </div>
         <div className={styles.NavItemContain}>
-          <NavItem>Главная</NavItem>
-          <NavItem>Роботы</NavItem>
-          <NavItem>Рабы</NavItem>
-          <NavItem>Пополнить</NavItem>
-          <NavItem>Вывести</NavItem>
-          <NavItem>Об игре</NavItem>
+          <NavItem to={"/crypto-slaves/main"}>Главная</NavItem>
+          <NavItem to={"/crypto-slaves/robots"}>Роботы</NavItem>
+          <NavItem to={"/crypto-slaves/slaves"}>Рабы</NavItem>
+          <NavItem to={"/crypto-slaves/topup"}>Пополнить</NavItem>
+          <NavItem to={"/crypto-slaves/withdraw"}>Вывести</NavItem>
+          <NavItem to={"/crypto-slaves/about"}>Об игре</NavItem>
         </div>
         <div className={styles.logo}>
           <p>CRYPTO SLAVES</p>
