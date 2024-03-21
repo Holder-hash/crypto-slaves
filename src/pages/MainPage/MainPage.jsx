@@ -1,4 +1,5 @@
 import styles from "./MainPage.module.scss";
+import TopPlayersTable from "../../widgets/TopPlayersTable/TopPlayersTable";
 
 export default function MainPage() {
   return (
@@ -24,7 +25,9 @@ export default function MainPage() {
         <p className={styles.title} style={{ margin: "30px 0" }}>
           ТОП 100
         </p>
-        <div className={styles.topPlayers}></div>
+        <div className={styles.topPlayers}>
+          <TopPlayersTable />
+        </div>
       </div>
     </>
   );
