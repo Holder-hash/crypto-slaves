@@ -1,18 +1,23 @@
 import styles from "./Header.module.scss";
 import Nav from "../Nav/Nav.jsx";
-import { useState } from "react";
+import { observer } from "mobx-react-lite";
+import navActiveStore from "../../store/navActiveStore";
 
-export default function Header() {
-  const [navActive, setNavActive] = useState(false);
+function Header() {
+  function NavBtnHandler() {
+    navActiveStore.toggleActive();
+  }
 
   return (
     <>
-      <Nav navActive={navActive} />
+      <Nav navActiveStore={navActiveStore.navActive} />
 
       <header>
         <button
-          className={`${styles.navBtn} ${navActive ? styles.navBtnActive : ""}`}
-          onClick={() => setNavActive(!navActive)}
+          className={`${styles.navBtn} ${
+            navActiveStore.navActive ? styles.navBtnActive : ""
+          }`}
+          onClick={() => NavBtnHandler()}
         >
           <span></span>
           <span></span>
@@ -23,3 +28,5 @@ export default function Header() {
     </>
   );
 }
+
+export default observer(Header);

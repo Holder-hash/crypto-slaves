@@ -1,9 +1,9 @@
 import styles from "./Nav.module.scss";
 import NavItem from "../../shared/NavItem/NavItem";
 
-export default function Nav({ navActive }) {
+export default function Nav({ navActiveStore }) {
   return (
-    <nav className={`${styles.nav} ${navActive ? styles.navActive : ""}`}>
+    <nav className={`${styles.nav} ${navActiveStore ? styles.navActive : ""}`}>
       <div className={styles.navInner}>
         <div className={styles.userInfo}>
           <img src="" />
