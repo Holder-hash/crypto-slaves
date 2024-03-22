@@ -91,7 +91,7 @@ const TopPlayersTable = () => {
             </td>
             <td
               style={{
-                padding: "10px 2px",
+                padding: "10px 0",
                 fontSize: `${index < 3 ? 25 - index * 3 : 15}px`,
                 width: "50%",
                 textAlign: "center",

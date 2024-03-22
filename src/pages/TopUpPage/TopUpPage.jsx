@@ -1,5 +1,7 @@
 import styles from "./TopUpPage.module.scss";
 import { useForm, Controller } from "react-hook-form";
+import FormInput from "../../shared/FormInput/FormInput";
+import FormSubmitButton from "../../shared/FormSubmitButton/FormSubmitButton";
 
 function TopUpPage() {
   const {
@@ -22,7 +24,7 @@ function TopUpPage() {
             control={control}
             rules={{ required: true, pattern: /^\d{1,4}$/ }}
             render={({ field }) => (
-              <input
+              <FormInput
                 {...field}
                 type="number"
                 placeholder="Сумма(от 1 до 10000)"
@@ -36,13 +38,21 @@ function TopUpPage() {
             name="text"
             control={control}
             render={({ field }) => (
-              <input {...field} type="text" placeholder="Промокод(если есть)" />
+              <FormInput
+                {...field}
+                type="text"
+                placeholder="Промокод(если есть)"
+              />
             )}
           />
         </div>
-        <button type="submit" onClick={handleSubmit}>
+        <FormSubmitButton
+          type="submit"
+          onClick={handleSubmit}
+          ref={handleSubmit}
+        >
           Пополнить
-        </button>
+        </FormSubmitButton>
       </form>
     </div>
   );
