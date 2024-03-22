@@ -23,7 +23,11 @@ function Header() {
           <span></span>
           <span></span>
         </button>
-        <h1 className={styles.logo}>CRYPTO SLAVES</h1>
+        <h1 className={styles.logo}>
+          CRYPTO
+          <br />
+          SLAVES
+        </h1>
       </header>
     </>
   );

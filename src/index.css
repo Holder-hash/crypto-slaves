@@ -19,15 +19,29 @@ body {
 }
 
 @font-face {
-  font-family: 'Aladin', sans-serif;
-  src: url('./assets/fonts/Aladin-Regular.ttf') format('ttf');
+  font-family: 'Aladin';
+  src: url(./assets/fonts/Aladin-Regular.ttf) ;
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'JockeyOne', sans-serif;
-  src: url('./assets/fonts/JockeyOne-Regular.ttf') format('ttf');
+  font-family: 'JockeyOne';
+  src: url(./assets/fonts/JockeyOne-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BIZ UDPMincho';
+  src: url(./assets/fonts/BIZUDPMincho-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  src: url(./assets/fonts/Alegreya-VariableFont_wght.ttf);
   font-weight: normal;
   font-style: normal;
 }

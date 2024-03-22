@@ -21,7 +21,11 @@ export default function Nav({ navActiveStore }) {
           <NavItem to={"/crypto-slaves/about"}>Об игре</NavItem>
         </div>
         <div className={styles.logo}>
-          <p>CRYPTO SLAVES</p>
+          <p>
+            CRYPTO
+            <br />
+            SLAVES
+          </p>
         </div>
       </div>
     </nav>
