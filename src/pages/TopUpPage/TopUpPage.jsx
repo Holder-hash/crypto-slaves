@@ -26,6 +26,7 @@ function TopUpPage() {
                 {...field}
                 type="number"
                 placeholder="Сумма(от 1 до 10000)"
+                style={{ borderColor: errors.number ? "red" : "initial" }}
               />
             )}
           />
@@ -34,14 +35,8 @@ function TopUpPage() {
           <Controller
             name="text"
             control={control}
-            rules={{ required: true }}
             render={({ field }) => (
-              <input
-                {...field}
-                type="text"
-                placeholder="Промокод(если есть)"
-                style={{ borderColor: errors.text ? "red" : "initial" }}
-              />
+              <input {...field} type="text" placeholder="Промокод(если есть)" />
             )}
           />
         </div>
