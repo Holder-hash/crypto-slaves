@@ -38,7 +38,7 @@ const TopPlayersTable = () => {
         <tr style={{ textAlign: "center" }}>
           <th
             style={{
-              borderBottom: "2px solid white",
+              borderBottom: "1px solid white",
               padding: "10px 0",
               width: "50%",
             }}
@@ -47,10 +47,10 @@ const TopPlayersTable = () => {
           </th>
           <th
             style={{
-              borderBottom: "2px solid white",
+              borderBottom: "1px solid white",
+              borderLeft: "1px solid white",
               padding: "10px 0",
               width: "50%",
-              border: "1px solid white",
             }}
           >
             Рабы
@@ -91,8 +91,7 @@ const TopPlayersTable = () => {
             </td>
             <td
               style={{
-                borderRight: "1px solid white",
-                padding: "10px 0",
+                padding: "10px 2px",
                 fontSize: `${index < 3 ? 25 - index * 3 : 15}px`,
                 width: "50%",
                 textAlign: "center",
