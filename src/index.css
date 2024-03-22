@@ -26,6 +26,13 @@ body {
 }
 
 @font-face {
+  font-family: 'Alatsi';
+  src: url(./assets/fonts/Alatsi-Regular.ttf) ;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'JockeyOne';
   src: url(./assets/fonts/JockeyOne-Regular.ttf);
   font-weight: normal;
