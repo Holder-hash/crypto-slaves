@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
+import topPlayerImg0 from "../../assets/img/topPlayersImg/topPlayerImg0.png";
+import topPlayerImg1 from "../../assets/img/topPlayersImg/topPlayerImg1.png";
+import topPlayerImg2 from "../../assets/img/topPlayersImg/topPlayerImg2.png";
 
 const TopPlayersTable = () => {
   const [data, setData] = useState([]);
+  const topPlayerImages = [topPlayerImg0, topPlayerImg1, topPlayerImg2];
 
   useEffect(() => {
     setData([
@@ -64,24 +68,24 @@ const TopPlayersTable = () => {
               }}
             >
               {index < 3 ? (
-                <div
-                  style={{ display: "flex", gap: "10px", alignItems: "center" }}
-                >
+                <div style={{ display: "flex", alignItems: "center" }}>
                   <img
-                    src={`imagePathForIndex${index}.jpg`}
-                    alt={`Image ${index}`}
+                    src={topPlayerImages[index]}
+                    alt={`top ${index + 1}`}
+                    style={{ width: "19px", height: "23px" }}
                   />
+
                   <p
                     style={{
                       fontSize: `${index < 3 ? 25 - index * 3 : 15}px`,
                     }}
                   >
-                    {item.name}
+                    &nbsp;&nbsp;{item.name}
                   </p>
                 </div>
               ) : (
                 <p>
-                  {index}. {item.name}
+                  {index}.&nbsp;&nbsp;{item.name}
                 </p>
               )}
             </td>
