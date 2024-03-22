@@ -28,6 +28,16 @@
     outline: none;
   }
 
+  input::placeholder {
+    font-family: Bitter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+
+    color: white;
+  }
+
   button {
     align-self: center;
     width: 110px;
