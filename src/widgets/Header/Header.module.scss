@@ -34,6 +34,8 @@
 }
 
 .navBtnActive {
+  position: fixed;
+
   span:nth-child(1) {
     position: absolute;
     transform: rotate(135deg);
