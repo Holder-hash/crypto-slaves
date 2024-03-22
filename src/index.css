@@ -52,3 +52,10 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Bitter';
+  src: url(./assets/fonts/Bitter-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}

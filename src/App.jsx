@@ -6,6 +6,7 @@ import LoginPage from "./pages/LoginPage/MainPage/LoginPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import RobotsPage from "./pages/RobotsPage/RobotsPage";
 import SlavesPage from "./pages/SlavesPage/SlavesPage";
+import TopUpPage from "./pages/TopUpPage/TopUpPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="main" element={<MainPage />} />
         <Route path="robots" element={<RobotsPage />} />
         <Route path="slaves" element={<SlavesPage />} />
+        <Route path="topup" element={<TopUpPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
     </Routes>
