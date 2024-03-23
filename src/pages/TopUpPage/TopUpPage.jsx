@@ -2,6 +2,7 @@ import styles from "./TopUpPage.module.scss";
 import { useForm, Controller } from "react-hook-form";
 import FormInput from "../../shared/FormInput/FormInput";
 import FormSubmitButton from "../../shared/FormSubmitButton/FormSubmitButton";
+import TopUpHistoryTable from "../../widgets/TopUpHistoryTable/TopUpHistoryTable";
 
 function TopUpPage() {
   const {
@@ -54,6 +55,9 @@ function TopUpPage() {
           Пополнить
         </FormSubmitButton>
       </form>
+
+      <p className={styles.subtitle}>История пополнений</p>
+      <TopUpHistoryTable />
     </div>
   );
 }
