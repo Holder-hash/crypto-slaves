@@ -24,12 +24,25 @@ function WithdrawHistoryTable() {
         {data.map((row, index) => (
           <tr
             key={index}
-            style={{ backgroundColor: index % 2 === 1 && "#B6B3B3" }}
+            style={{
+              backgroundColor: index % 2 === 1 && "#B6B3B3",
+            }}
           >
             <td>
               <span>{row.A}</span>
               <span>{row.B}$</span>
-              <span>{row.C}</span>
+              <span
+                style={{
+                  color:
+                    row.C == "Успешно"
+                      ? "green"
+                      : row.C == "Отклонено"
+                      ? "red"
+                      : "white",
+                }}
+              >
+                {row.C}
+              </span>
             </td>
           </tr>
         ))}
