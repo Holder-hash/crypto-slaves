@@ -3,6 +3,7 @@ import { useForm, Controller } from "react-hook-form";
 import FormInput from "../../shared/FormInput/FormInput";
 import FormSubmitButton from "../../shared/FormSubmitButton/FormSubmitButton";
 import FormSelect from "../../shared/FormSelect/FormSelect";
+import WithdrawHistoryTable from "../../widgets/WithdrawHistoryTable/WithdrawHistoryTable";
 import bitcoin from "../../assets/img/formOptionImg/bitcoin.png";
 
 function WithdrawPage() {
@@ -14,11 +15,6 @@ function WithdrawPage() {
 
   const onSubmit = (data) => {
     console.log(data);
-  };
-
-  const handleSelectChange = (value) => {
-    setSelectedValue(value);
-    console.log("Selected value:", value);
   };
 
   return (
@@ -86,6 +82,8 @@ function WithdrawPage() {
           Вывести
         </FormSubmitButton>
       </form>
+
+      <WithdrawHistoryTable />
     </div>
   );
 }
