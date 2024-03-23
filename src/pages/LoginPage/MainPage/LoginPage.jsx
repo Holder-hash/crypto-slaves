@@ -6,7 +6,9 @@ export default function LoginPage() {
   const navigate = useNavigate();
 
   function authBtnHandler() {
-    navigate("/crypto-slaves/main");
+    localStorage.getItem("agreementAccepted") == "true"
+      ? navigate("/crypto-slaves/main")
+      : navigate("/crypto-slaves/agreement");
   }
 
   return (

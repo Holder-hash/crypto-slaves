@@ -6,6 +6,11 @@ function AgreementPage() {
   let [isChecked, setIsChecked] = useState(false);
   const navigate = useNavigate();
 
+  function doneBtnHandler() {
+    localStorage.setItem("agreementAccepted", true);
+    isChecked && navigate("/crypto-slaves/main");
+  }
+
   return (
     <div className={styles.wrapper}>
       <p className={styles.title}>Пользовательское соглашение</p>
@@ -362,7 +367,7 @@ function AgreementPage() {
       </div>
       <button
         className={`${styles.btn} ${!isChecked && styles.btnDisabled}`}
-        onClick={() => isChecked && navigate("/crypto-slaves/main")}
+        onClick={() => doneBtnHandler()}
       >
         Готово
       </button>
