@@ -7,6 +7,7 @@ import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import RobotsPage from "./pages/RobotsPage/RobotsPage";
 import SlavesPage from "./pages/SlavesPage/SlavesPage";
 import TopUpPage from "./pages/TopUpPage/TopUpPage";
+import WithdrawPage from "./pages/WithdrawPage/WithdrawPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="robots" element={<RobotsPage />} />
         <Route path="slaves" element={<SlavesPage />} />
         <Route path="topup" element={<TopUpPage />} />
+        <Route path="withdraw" element={<WithdrawPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
     </Routes>
