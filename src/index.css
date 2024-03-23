@@ -59,3 +59,10 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Alumni Sans Collegiate One';
+  src: url(./assets/fonts/AlumniSansCollegiateOne-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
