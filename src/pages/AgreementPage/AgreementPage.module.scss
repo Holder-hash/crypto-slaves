@@ -1,0 +1,63 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.title {
+  font-family: BIZ UDPMincho;
+  font-size: 5vw;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.agreementBody {
+  width: 100%;
+  max-height: 70vh;
+  overflow-y: auto;
+  border: 2px solid white;
+  padding: 10px;
+
+  font-family: Bitter;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 22.8px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+.checkboxContain {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-family: Bitter;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.btn {
+  margin-top: 10px;
+  align-self: self-start;
+
+  width: 110px;
+  height: 22px;
+  background: #278825;
+  outline: none;
+  border: 2px solid #074b06;
+
+  font-family: Bitter;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: white;
+}
+
+.btnDisabled {
+  background: #074b06;
+  border: 2px solid #063a05;
+  color: rgb(156, 156, 156);
+}

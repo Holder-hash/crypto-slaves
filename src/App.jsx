@@ -9,6 +9,7 @@ import SlavesPage from "./pages/SlavesPage/SlavesPage";
 import TopUpPage from "./pages/TopUpPage/TopUpPage";
 import WithdrawPage from "./pages/WithdrawPage/WithdrawPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
+import AgreementPage from "./pages/AgreementPage/AgreementPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="topup" element={<TopUpPage />} />
         <Route path="withdraw" element={<WithdrawPage />} />
         <Route path="about" element={<AboutPage />} />
+        <Route path="agreement" element={<AgreementPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
     </Routes>
