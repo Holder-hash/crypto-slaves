@@ -1,13 +1,13 @@
-import { useState, useEffect } from "react";
-import coinImage from "../../assets/img/coinRain/coin1.jpg"; // Путь к изображению монеты
 import "./CoinRain.scss";
+import { useState, useEffect } from "react";
 
-const CoinRain = ({ speed, frequency }) => {
+const CoinRain = ({ images, speed, frequency }) => {
   const [coins, setCoins] = useState([]);
 
   const createCoin = () => {
     const randomX = Math.random() * window.innerWidth;
-    const coin = { id: Date.now(), x: randomX, y: -100 };
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    const coin = { id: Date.now(), x: randomX, y: -100, image: randomImage };
     setCoins((prevCoins) => [...prevCoins, coin]);
   };
 
@@ -26,7 +26,7 @@ const CoinRain = ({ speed, frequency }) => {
   useEffect(() => {
     const interval = setInterval(createCoin, frequency);
     return () => clearInterval(interval);
-  }, [frequency]);
+  }, [frequency, images]);
 
   useEffect(() => {
     const updateInterval = setInterval(updateCoinsPosition, 50);
@@ -42,7 +42,7 @@ const CoinRain = ({ speed, frequency }) => {
       {coins.map((coin) => (
         <img
           key={coin.id}
-          src={coinImage}
+          src={coin.image}
           alt="coin"
           className="coin"
           style={{ left: coin.x, top: coin.y }}
