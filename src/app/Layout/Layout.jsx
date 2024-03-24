@@ -15,7 +15,7 @@ export default function Layout() {
 
   return (
     <>
-      <CoinRain images={images} speed={5} frequency={500} />
+      <CoinRain images={images} speed={3} frequency={500} />
       <div className="mainWrapper">
         {location.pathname != "/crypto-slaves/" && <Header />}
         <main style={{ marginBottom: "4rem", minHeight: "73vh" }}>
