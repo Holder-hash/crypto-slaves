@@ -66,3 +66,10 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Alice';
+  src: url(./assets/fonts/Alice-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}

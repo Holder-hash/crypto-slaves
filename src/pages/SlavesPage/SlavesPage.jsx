@@ -5,6 +5,7 @@ function SlavesPage() {
   return (
     <div className={styles.wrapper}>
       <p className={styles.title}>Ваши рабы</p>
+      <button className={styles.inviteBtn}>Пригласить друзей</button>
       <div className={styles.slavesList}>
         <SlavesItem username={"username"} profit={0.01} />
         <SlavesItem username={"username"} profit={0.01} />
