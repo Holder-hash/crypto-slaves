@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./app/Layout/Layout";
 import MainPage from "./pages/MainPage/MainPage";
-import PrivateRoute from "./app/routes/PrivateRoute";
 import LoginPage from "./pages/LoginPage/MainPage/LoginPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import RobotsPage from "./pages/RobotsPage/RobotsPage";
@@ -10,6 +9,7 @@ import TopUpPage from "./pages/TopUpPage/TopUpPage";
 import WithdrawPage from "./pages/WithdrawPage/WithdrawPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import AgreementPage from "./pages/AgreementPage/AgreementPage";
+import AdminPage from "./pages/AdminPage/AdminPage";
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
         <Route path="withdraw" element={<WithdrawPage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="agreement" element={<AgreementPage />} />
+        <Route path="admin" element={<AdminPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
     </Routes>

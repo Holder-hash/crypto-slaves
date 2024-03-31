@@ -73,3 +73,10 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Inter';
+  src: url(./assets/fonts/Inter-VariableFont_slnt.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
