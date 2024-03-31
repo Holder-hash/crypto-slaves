@@ -2,7 +2,7 @@ import styles from "./AdminPage.module.scss";
 import { useState, useRef } from "react";
 
 import AllPlayersTable from "../../widgets/admin/AllPlayersTable/AllPlayersTable";
-import TopUpTable from "../../widgets/admin/AllPlayersTable/TopUpTable/TopUpTable";
+import TopUpTable from "../../widgets/admin/TopUpTable/TopUpTable";
 
 function AdminPage() {
   const [sliderIndex, setSliderIndex] = useState();
