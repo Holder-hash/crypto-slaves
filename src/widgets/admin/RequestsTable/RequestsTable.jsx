@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./RequestsTable.module.scss";
 import copyImg from "../../../assets/img/copy.png";
 
@@ -19,6 +19,13 @@ function RequestsTable() {
       withdrawalRequest: "20.00$ | Ethereum eth241k...asasdfdk",
     },
   ];
+
+  const [copiedText, setCopiedText] = useState("");
+
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text);
+    setCopiedText(text);
+  };
 
   return (
     <div className={styles.tableContainer}>
@@ -55,7 +62,11 @@ function RequestsTable() {
               <td className={styles.cell}>
                 <div className={styles.valueWrapper}>
                   {player.withdrawalRequest}
-                  <img src={copyImg} alt="" />
+                  <img
+                    src={copyImg}
+                    alt=""
+                    onClick={() => copyToClipboard(player.withdrawalRequest)}
+                  />
                 </div>
               </td>
             </tr>
