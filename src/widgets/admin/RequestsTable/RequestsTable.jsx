@@ -27,6 +27,10 @@ function RequestsTable() {
     setCopiedText(text);
   };
 
+  const handleCheckboxChange = (id) => {
+    console.log(id);
+  };
+
   return (
     <div className={styles.tableContainer}>
       <table className={styles.table}>
@@ -44,7 +48,11 @@ function RequestsTable() {
             <tr key={index}>
               <td className={styles.cell}>
                 <label className={styles.checkboxWrapper}>
-                  <input type="checkbox" className={styles.checkbox} />
+                  <input
+                    type="checkbox"
+                    className={styles.checkbox}
+                    onChange={() => handleCheckboxChange(player.id)}
+                  />
                   <span className={styles.checkmark}></span>
                 </label>
               </td>
@@ -64,7 +72,6 @@ function RequestsTable() {
                   {player.withdrawalRequest}
                   <img
                     src={copyImg}
-                    alt=""
                     onClick={() => copyToClipboard(player.withdrawalRequest)}
                   />
                 </div>
