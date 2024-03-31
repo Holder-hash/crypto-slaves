@@ -1,9 +1,10 @@
 .wrapper {
-  width: 100%;
+  min-width: 1000px;
   height: 100vh;
   padding: 0 3rem;
   background-color: rgb(185, 185, 185);
   color: black;
+  font-family: Inter;
 }
 
 .nav {
@@ -11,6 +12,7 @@
   height: 75px;
 
   ul {
+    position: relative;
     width: 100%;
     height: inherit;
     display: flex;
@@ -19,10 +21,17 @@
     list-style: none;
 
     li {
-      font-family: Inter;
+      position: relative;
       font-size: 30px;
-      font-weight: 400;
-      text-align: center;
+    }
+
+    .navLine {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      width: 165px;
+      height: 1px;
+      background-color: black;
     }
   }
 }
