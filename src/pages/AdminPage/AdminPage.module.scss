@@ -30,6 +30,19 @@
       -webkit-tap-highlight-color: transparent;
     }
 
+    li:nth-child(3)::before {
+      content: attr(requsetsCount);
+      position: absolute;
+      right: -14%;
+      background: white;
+      width: 30px;
+      height: 20px;
+      border-radius: 5px;
+
+      font-size: 16px;
+      text-align: center;
+    }
+
     .navLine {
       position: absolute;
       bottom: 25px;

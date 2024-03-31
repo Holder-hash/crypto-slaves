@@ -49,6 +49,7 @@ function AdminPage() {
               navItemHandler(event);
               setSliderIndex(2);
             }}
+            requsetsCount="2"
           >
             Запросы на вывод
           </li>
