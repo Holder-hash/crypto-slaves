@@ -19,110 +19,6 @@ function AllPlayersTable() {
       referralRevenue: 0,
       percentage: "2",
     },
-    {
-      nickname: "@asdfaffsd",
-      rechargeAmount: 0,
-      referralCount: 0,
-      withdrawalAmount: 0,
-      referralRevenue: 0,
-      percentage: "2",
-    },
-    {
-      nickname: "@asdfaffsd",
-      rechargeAmount: 0,
-      referralCount: 0,
-      withdrawalAmount: 0,
-      referralRevenue: 0,
-      percentage: "2",
-    },
-    {
-      nickname: "@asdfaffsd",
-      rechargeAmount: 0,
-      referralCount: 0,
-      withdrawalAmount: 0,
-      referralRevenue: 0,
-      percentage: "2",
-    },
-    {
-      nickname: "@asdfaffsd",
-      rechargeAmount: 0,
-      referralCount: 0,
-      withdrawalAmount: 0,
-      referralRevenue: 0,
-      percentage: "2",
-    },
-    {
-      nickname: "@asdfaffsd",
-      rechargeAmount: 0,
-      referralCount: 0,
-      withdrawalAmount: 0,
-      referralRevenue: 0,
-      percentage: "2",
-    },
-    {
-      nickname: "@asdfaffsd",
-      rechargeAmount: 0,
-      referralCount: 0,
-      withdrawalAmount: 0,
-      referralRevenue: 0,
-      percentage: "2",
-    },
-    {
-      nickname: "@asdfaffsd",
-      rechargeAmount: 0,
-      referralCount: 0,
-      withdrawalAmount: 0,
-      referralRevenue: 0,
-      percentage: "2",
-    },
-    {
-      nickname: "@asdfaffsd",
-      rechargeAmount: 0,
-      referralCount: 0,
-      withdrawalAmount: 0,
-      referralRevenue: 0,
-      percentage: "2",
-    },
-    {
-      nickname: "@asdfaffsd",
-      rechargeAmount: 0,
-      referralCount: 0,
-      withdrawalAmount: 0,
-      referralRevenue: 0,
-      percentage: "2",
-    },
-    {
-      nickname: "@asdfaffsd",
-      rechargeAmount: 0,
-      referralCount: 0,
-      withdrawalAmount: 0,
-      referralRevenue: 0,
-      percentage: "2",
-    },
-    {
-      nickname: "@asdfaffsd",
-      rechargeAmount: 0,
-      referralCount: 0,
-      withdrawalAmount: 0,
-      referralRevenue: 0,
-      percentage: "2",
-    },
-    {
-      nickname: "@asdfaffsd",
-      rechargeAmount: 0,
-      referralCount: 0,
-      withdrawalAmount: 0,
-      referralRevenue: 0,
-      percentage: "2",
-    },
-    {
-      nickname: "@asdfaffsd",
-      rechargeAmount: 0,
-      referralCount: 0,
-      withdrawalAmount: 0,
-      referralRevenue: 0,
-      percentage: "2",
-    },
   ];
 
   return (
@@ -169,7 +65,7 @@ function AllPlayersTable() {
               </td>
             </tr>
           ))}
-          {Array.from({ length: 10 - data.length }, (_, index) => (
+          {Array.from({ length: 13 - data.length }, (_, index) => (
             <tr key={data.length + index}>
               <td className={`${styles.emptyCell} ${styles.cell}`}>&nbsp;</td>
               <td className={`${styles.emptyCell} ${styles.cell}`}>&nbsp;</td>

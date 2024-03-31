@@ -33,7 +33,7 @@ function TopUpTable() {
               </td>
             </tr>
           ))}
-          {Array.from({ length: 10 - data.length }, (_, index) => (
+          {Array.from({ length: 13 - data.length }, (_, index) => (
             <tr key={data.length + index}>
               <td className={`${styles.emptyCell} ${styles.cell}`}>&nbsp;</td>
               <td className={`${styles.emptyCell} ${styles.cell}`}>&nbsp;</td>

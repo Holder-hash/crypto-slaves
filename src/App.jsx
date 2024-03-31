@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./app/Layout/Layout";
 import MainPage from "./pages/MainPage/MainPage";
 import LoginPage from "./pages/LoginPage/MainPage/LoginPage";
@@ -13,7 +13,7 @@ import AdminPage from "./pages/AdminPage/AdminPage";
 
 function App() {
   return (
-    <Routes>
+    <Router>
       <Route path={"/crypto-slaves"} element={<Layout />}>
         <Route index element={<LoginPage />} />
         <Route path="main" element={<MainPage />} />
@@ -26,7 +26,7 @@ function App() {
         <Route path="admin" element={<AdminPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
-    </Routes>
+    </Router>
   );
 }
 
