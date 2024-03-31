@@ -1,24 +1,24 @@
 import styles from "./AdminPage.module.scss";
 import { useState, useRef } from "react";
 
+import AllPlayersTable from "../../widgets/admin/AllPlayersTable/AllPlayersTable";
+
 function AdminPage() {
   const [lineParams, setLineParams] = useState({
     width: 165,
-    posX: 0,
+    posX: 48,
   });
 
-  const navLineRef = useRef(null); // Создаем ссылку на элемент navLine
+  const navLineRef = useRef(null);
 
   function navItemHandler(event) {
-    const navItem = event.target; // Получаем элемент <li>, на который был совершен клик
-    const { left, width } = navItem.getBoundingClientRect(); // Получаем позицию и ширину элемента <li>
+    const navItem = event.target;
+    const { left, width } = navItem.getBoundingClientRect();
     setLineParams({
       width: width,
       posX: left,
     });
   }
-
-  console.log(lineParams);
 
   return (
     <div className={styles.wrapper}>
@@ -37,6 +37,9 @@ function AdminPage() {
           ></div>
         </ul>
       </nav>
+      <div className={styles.slider}>
+        <AllPlayersTable />
+      </div>
     </div>
   );
 }
