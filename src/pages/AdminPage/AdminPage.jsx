@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 
 import AllPlayersTable from "../../widgets/admin/AllPlayersTable/AllPlayersTable";
 import TopUpTable from "../../widgets/admin/TopUpTable/TopUpTable";
+import RequestsTable from "../../widgets/admin/RequestsTable/RequestsTable";
 
 function AdminPage() {
   const [sliderIndex, setSliderIndex] = useState();
@@ -69,6 +70,7 @@ function AdminPage() {
       >
         <AllPlayersTable />
         <TopUpTable />
+        <RequestsTable />
       </div>
     </div>
   );

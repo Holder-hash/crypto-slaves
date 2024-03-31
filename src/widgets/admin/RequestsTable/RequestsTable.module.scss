@@ -1,0 +1,50 @@
+.tableContainer {
+  min-width: 100%;
+  overflow-y: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.cell {
+  padding: 8px;
+}
+
+.checkbox {
+  display: block;
+  width: 30px !important;
+  background: red !important;
+}
+
+.emptyCell {
+  border: none !important;
+  border-left: 1px solid black !important;
+  border-right: 1px solid black !important;
+  padding: 8px;
+}
+
+.valueWrapper {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 7px;
+
+  img {
+    width: 10px;
+    align-self: flex-end;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+}
