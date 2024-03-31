@@ -4,56 +4,75 @@ import styles from "./AllPlayersTable.module.scss";
 function AllPlayersTable() {
   const data = [
     {
-      id: 1,
-      name: "John",
-      age: 30,
-      city: "New York",
-      country: "USA",
-      email: "john@example.com",
+      nickname: "@asdfaffsd",
+      rechargeAmount: 0,
+      referralCount: 0,
+      withdrawalAmount: 0,
+      referralRevenue: 0,
+      percentage: "2",
     },
     {
-      id: 2,
-      name: "Alice",
-      age: 25,
-      city: "London",
-      country: "UK",
-      email: "alice@example.com",
+      nickname: "@asdfaffsd",
+      rechargeAmount: 0,
+      referralCount: 0,
+      withdrawalAmount: 0,
+      referralRevenue: 0,
+      percentage: "2",
     },
   ];
 
   return (
     <div className={styles.tableContainer}>
-      <h2>Данные</h2>
       <table className={styles.table}>
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Имя</th>
-            <th>Возраст</th>
-            <th>Город</th>
-            <th>Страна</th>
-            <th>Email</th>
+            <th>Ник</th>
+            <th>Сумма пополнений</th>
+            <th>Количество рефералов</th>
+            <th>Сумма выводов</th>
+            <th>С рефералов</th>
+            <th>%</th>
           </tr>
         </thead>
         <tbody>
-          {data.map((item) => (
-            <tr key={item.id}>
-              <td>{item.id}</td>
-              <td>{item.name}</td>
-              <td>{item.age}</td>
-              <td>{item.city}</td>
-              <td>{item.country}</td>
-              <td>{item.email}</td>
+          {data.map((player, index) => (
+            <tr key={index}>
+              <td className={styles.cell}>
+                <div className={styles.valueWrapper}>{player.nickname}</div>
+              </td>
+              <td className={styles.cell}>
+                <div className={styles.valueWrapper}>
+                  {player.rechargeAmount}
+                </div>
+              </td>
+              <td className={styles.cell}>
+                <div className={styles.valueWrapper}>
+                  {player.referralCount}
+                </div>
+              </td>
+              <td className={styles.cell}>
+                <div className={styles.valueWrapper}>
+                  {player.withdrawalAmount}
+                </div>
+              </td>
+              <td className={styles.cell}>
+                <div className={styles.valueWrapper}>
+                  {player.referralRevenue}
+                </div>
+              </td>
+              <td className={styles.cell}>
+                <div className={styles.valueWrapper}>{player.percentage}</div>
+              </td>
             </tr>
           ))}
           {Array.from({ length: 10 - data.length }, (_, index) => (
             <tr key={data.length + index}>
-              <td className={styles.emptyCell}>&nbsp;</td>
-              <td className={styles.emptyCell}>&nbsp;</td>
-              <td className={styles.emptyCell}>&nbsp;</td>
-              <td className={styles.emptyCell}>&nbsp;</td>
-              <td className={styles.emptyCell}>&nbsp;</td>
-              <td className={styles.emptyCell}>&nbsp;</td>
+              <td className={`${styles.emptyCell} ${styles.cell}`}>&nbsp;</td>
+              <td className={`${styles.emptyCell} ${styles.cell}`}>&nbsp;</td>
+              <td className={`${styles.emptyCell} ${styles.cell}`}>&nbsp;</td>
+              <td className={`${styles.emptyCell} ${styles.cell}`}>&nbsp;</td>
+              <td className={`${styles.emptyCell} ${styles.cell}`}>&nbsp;</td>
+              <td className={`${styles.emptyCell} ${styles.cell}`}>&nbsp;</td>
             </tr>
           ))}
         </tbody>
