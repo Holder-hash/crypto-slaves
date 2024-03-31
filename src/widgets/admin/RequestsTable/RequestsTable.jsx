@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import styles from "./RequestsTable.module.scss";
 import copyImg from "../../../assets/img/copy.png";
 
