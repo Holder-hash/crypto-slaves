@@ -2,8 +2,11 @@ import styles from "./AdminPage.module.scss";
 import { useState, useRef } from "react";
 
 import AllPlayersTable from "../../widgets/admin/AllPlayersTable/AllPlayersTable";
+import TopUpTable from "../../widgets/admin/AllPlayersTable/TopUpTable/TopUpTable";
 
 function AdminPage() {
+  const [sliderIndex, setSliderIndex] = useState();
+
   const [lineParams, setLineParams] = useState({
     width: 165,
     posX: 48,
@@ -24,9 +27,30 @@ function AdminPage() {
     <div className={styles.wrapper}>
       <nav className={styles.nav}>
         <ul>
-          <li onClick={navItemHandler}>Все игроки</li>
-          <li onClick={navItemHandler}>Пополнения</li>
-          <li onClick={navItemHandler}>Запросы на вывод</li>
+          <li
+            onClick={(event) => {
+              navItemHandler(event);
+              setSliderIndex(0);
+            }}
+          >
+            Все игроки
+          </li>
+          <li
+            onClick={(event) => {
+              navItemHandler(event);
+              setSliderIndex(1);
+            }}
+          >
+            Пополнения
+          </li>
+          <li
+            onClick={(event) => {
+              navItemHandler(event);
+              setSliderIndex(2);
+            }}
+          >
+            Запросы на вывод
+          </li>
           <div
             ref={navLineRef}
             className={styles.navLine}
@@ -37,8 +61,14 @@ function AdminPage() {
           ></div>
         </ul>
       </nav>
-      <div className={styles.slider}>
+      <div
+        className={styles.slider}
+        style={{
+          transform: `translateX(-${100 * sliderIndex}%)`,
+        }}
+      >
         <AllPlayersTable />
+        <TopUpTable />
       </div>
     </div>
   );
