@@ -36,7 +36,10 @@ function RequestsTable() {
           {data.map((player, index) => (
             <tr key={index}>
               <td className={styles.cell}>
-                <input type="checkbox" className={styles.checkbox} />
+                <label className={styles.checkboxWrapper}>
+                  <input type="checkbox" className={styles.checkbox} />
+                  <span className={styles.checkmark}></span>
+                </label>
               </td>
               <td className={styles.cell}>
                 <div className={styles.valueWrapper}>{player.nickname}</div>

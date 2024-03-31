@@ -20,10 +20,55 @@
   padding: 8px;
 }
 
-.checkbox {
+/* RequestsTable.module.scss */
+
+.checkboxWrapper {
+  position: relative;
+  display: flex;
+  align-items: center; /* Выравнивание по вертикали по центру */
+  justify-content: center; /* Выравнивание по горизонтали по центру */
+  width: 100%;
+  height: 100%;
+}
+
+.checkboxWrapper input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkboxWrapper input[type="checkbox"]:checked ~ .checkmark:after {
   display: block;
-  width: 30px !important;
-  background: red !important;
+}
+
+.checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(0, 140, 255);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
 }
 
 .emptyCell {
